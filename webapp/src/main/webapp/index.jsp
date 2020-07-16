@@ -4,3 +4,4 @@
 				<b>parashu aadhya</b>
 						<h2>developer</h2>
 						<h1>by parashuram</h1>
+<h1>conditions apply</h1>
