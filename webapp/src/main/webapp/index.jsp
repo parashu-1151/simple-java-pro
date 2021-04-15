@@ -14,10 +14,6 @@
 <h1>this is facebook website</h1>
 <h2> this is parashuram</h1>
 <h1> my project is done.......</h1>
-<h1>apple....<h1/>
-		<h1>ball</h1>
-		<h1>cat</h1>
-		<h1>...dog...</h1>
-		<h1>..elephant</h1>
+
 
 
