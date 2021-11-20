@@ -16,7 +16,30 @@ pipeline {
         }
         stage(Deploy) {
             steps {
-                deploy adapters: [tomcat8(credentialsId: 'tomcat_credentials', path: '', url: 'http://65.2.63.250:8080/')], contextPath: null, war: '**/*.war'
+                deploy adapters: [tomcat8(credentialsId: 'tomcat_credentials', path: '', url: 'http://13.233.152.119:8080/')], contextPath: null, war: '**/*.war'
+            }
+        }
+        stage('slack notify') {
+            steps {
+              slackSend channel: '#jenkins', message: 'dev deployment successfully'
+            }
+        }
+        stage('Dev approval') {
+            steps {
+                echo "Taking approval from Dev manager for QA deploy"
+                timeout(time: 7, unit: 'DAYS') { 
+                input message: 'do u want to deploy?', submitter: 'admin'
+                }
+            }
+        }
+        stage('Deploy to QA') {
+            steps {
+                deploy adapters: [tomcat8(credentialsId: 'tomcat_credentials', path: '', url: 'http://13.233.152.119:8080/')], contextPath: null, war: '**/*.war'
+            }
+        }
+        stage('slack notify-QA') {
+            steps {
+              slackSend channel: '#jenkins', message: 'QA deployment successfully start testing'
             }
         }
     }
