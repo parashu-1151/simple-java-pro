@@ -16,7 +16,7 @@ pipeline {
         }
         stage(Deploy) {
             steps {
-                deploy adapters: [tomcat8(credentialsId: 'tomcat_credentials', path: '', url: 'http://13.233.152.119:8080/')], contextPath: null, war: '**/*.war'
+                deploy adapters: [tomcat8(credentialsId: 'tomcat_credentials', path: '', url: 'http://15.206.163.97:8080/')], contextPath: null, war: '**/*.war'
             }
         }
         stage('slack notify') {
@@ -34,7 +34,7 @@ pipeline {
         }
         stage('Deploy to QA') {
             steps {
-                deploy adapters: [tomcat8(credentialsId: 'tomcat_credentials', path: '', url: 'http://13.233.152.119:8080/')], contextPath: null, war: '**/*.war'
+                deploy adapters: [tomcat8(credentialsId: 'tomcat_credentials', path: '', url: 'http://15.206.163.97:8080/')], contextPath: null, war: '**/*.war'
             }
         }
         stage('slack notify-QA') {
