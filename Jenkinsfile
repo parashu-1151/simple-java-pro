@@ -18,6 +18,7 @@ pipeline {
             steps {
                 
                 deploy adapters: [tomcat8(credentialsId: 'tomcat_credentials', path: '', url: 'http://65.1.110.63:8080/')], contextPath: null, war: '**/*.war'
+                
             }
         }
         stage('slack notify') {
