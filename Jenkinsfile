@@ -41,7 +41,7 @@ pipeline {
         }
         stage('slack notify-QA') {
             steps {
-              slackSend channel: '#jenkins', message: 'QA deployment successfully start testing'
+              slackSend channel: '#jenkins', message: 'QA deployment successfull...plz start testing'
             }
         }
     }
