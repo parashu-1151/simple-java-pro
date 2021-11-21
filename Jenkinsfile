@@ -21,7 +21,7 @@ pipeline {
         }
         stage('slack notify') {
             steps {
-              slackSend channel: '#jenkins', message: 'dev deployment successfully for multibranch'
+              slackSend channel: '#jenkins', message: 'dev deployment successfully for multibranch with webhook'
             }
         }
         stage('Dev approval') {
