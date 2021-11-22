@@ -12,7 +12,7 @@
 <h1>slack integration success with jenkins</h1>
 <h1> deploy in QA environment</h1>
 <h1>finally created jenkinsfile...</h1>
-<h1>multibranch pipeline implemented</h1>
+<h1>multibranch pipeline implemented...</h1>
 
 
 
