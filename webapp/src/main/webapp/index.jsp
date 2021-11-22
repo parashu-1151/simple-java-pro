@@ -18,6 +18,8 @@
 <h1>GOOD MORNING...</h1>
 <h1>Hello.....</h1>
 <h1>good after noon.....</h1>
+<h1> this is cicd of jenkins and docker using declarative pipeline</h1>
+
 
 
 
