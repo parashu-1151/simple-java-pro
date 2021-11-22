@@ -1,6 +1,6 @@
 # Pull base image 
-From tomcat:8-jre8 
-
+FROM tomcat:8-jre8 
+RUN yum install java-1.8.0-openjdk -y
 # Maintainer 
-MAINTAINER "valaxytech@gmail.com" 
-COPY ./webapp.war /usr/local/tomcat/webapps
+MAINTAINER "parashu1151@gmail.com" 
+COPY target/*.war /usr/local/tomcat/webapps
