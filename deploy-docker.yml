@@ -1,5 +1,5 @@
 ---
-  - hosts: dev
+  - hosts: env
     become: true
     gather_facts: false
     tasks:
