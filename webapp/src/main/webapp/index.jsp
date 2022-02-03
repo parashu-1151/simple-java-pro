@@ -13,7 +13,7 @@
 <h1> deploy in QA environment</h1>
 <h1>finally created jenkinsfile...</h1>
 <h1>multibranch pipeline implemented...</h1>
-<h1>CICD....!!</h1>
+<h1>CICD..ato..!!</h1>
 
 
 
