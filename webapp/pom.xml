@@ -23,7 +23,7 @@
         <groupId>org.mortbay.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
       </plugin>
-    </plugins>
+      </plugins>
   </build>
 
   <dependencies>
@@ -40,15 +40,30 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+<<<<<<< HEAD
    <dependency>
+=======
+    <dependency>
+>>>>>>> aa7fcdd25b07682cd2a9ab46ba06f0cdd77efe7c
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.8.1</version>
       <scope>test</scope>
     </dependency>
+<<<<<<< HEAD
 
 
 
 
+=======
+         <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
+<dependency>
+    <groupId>org.jacoco</groupId>
+    <artifactId>jacoco-maven-plugin</artifactId>
+    <version>0.8.7</version>
+</dependency>
+
+         
+>>>>>>> aa7fcdd25b07682cd2a9ab46ba06f0cdd77efe7c
 
 </project>
