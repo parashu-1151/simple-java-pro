@@ -27,43 +27,26 @@
   </build>
 
   <dependencies>
-
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
       <scope>provided</scope>
     </dependency>
-
     <dependency>
       <groupId>javax.servlet.jsp</groupId>
       <artifactId>jsp-api</artifactId>
       <scope>provided</scope>
     </dependency>
-  </dependencies>
-<<<<<<< HEAD
    <dependency>
-=======
-    <dependency>
->>>>>>> aa7fcdd25b07682cd2a9ab46ba06f0cdd77efe7c
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.8.1</version>
       <scope>test</scope>
     </dependency>
-<<<<<<< HEAD
-
-
-
-
-=======
-         <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
-<dependency>
+   <dependency>
     <groupId>org.jacoco</groupId>
     <artifactId>jacoco-maven-plugin</artifactId>
     <version>0.8.7</version>
-</dependency>
-
-         
->>>>>>> aa7fcdd25b07682cd2a9ab46ba06f0cdd77efe7c
-
+   </dependency>
+  </dependencies>
 </project>
